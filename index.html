@@ -12,9 +12,10 @@
 <body>
 
   <header>
-    <img src="img/Profils/frintdevmax.png" alt="photo de profil utilisateur" class="pp">
-    <button class="retour" type="button">retour</button>
+    <div>
+      <img src="img/Profils/frintdevmax.png" alt="photo de profil utilisateur" class="pp">
     </div>
+    <button class="retour" type="button">retour</button>
   </header>
 
   <main>
@@ -65,14 +66,18 @@
 
     <h4>Note</h4>
 
-    <select class="star-rating" aria-label="Note utilisateur">
-      <option value="">Select a rating</option>
-      <option value="5">Excellent</option>
-      <option value="4">Very Good</option>
-      <option value="3">Average</option>
-      <option value="2">Poor</option>
-      <option value="1">Terrible</option>
-    </select>
+    <div class="envoi">
+      <select class="star-rating" aria-label="Note utilisateur">
+        <option value="">Select a rating</option>
+        <option value="5">Excellent</option>
+        <option value="4">Very Good</option>
+        <option value="3">Average</option>
+        <option value="2">Poor</option>
+        <option value="1">Terrible</option>
+      </select>
+
+      <button class="envoyer" type="button">envoyer</button>
+    </div>
 
     <h2>Avis</h2>
 
@@ -93,14 +98,25 @@
       </svg>
     </div>
 
-    <img src="img/Profils/simp2.png" alt="photo de profil autre utilisateur">
-    <h5>@Amycolory</h5>
+    <div class="pu2">
+      <img src="img/Profils/simp2.png" alt="photo de profil autre utilisateur">
+      <h5>@Amycolory</h5>
+    </div>
     <p>
       En fait ce troisième tome est trop long. La moitié du livre ne sert a rien. On peut la passer sans que la
       compréhension de l'histoire en soit affectée. La chute est prévisible. Bref. Déçu
     </p>
     <h4>Note</h4>
-    <div class="notescommunaute"></div>
+    <div class="note2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="174" height="30" viewBox="0 0 174 30" fill="none">
+        <ellipse cx="159" cy="14.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="123" cy="14.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="87" cy="15.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="51" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="15" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+      </svg>
+    </div>
+
 
     <button class="voir" type="button">voir tout</button>
   </main>
@@ -110,24 +126,10 @@
   </footer>
 
 
-
-  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin
-    d'afficher le système de note Javascript -->
-  <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
-        </select>
-    -->
-  <!-- 💡 Script pour gérer le rating d'un livre -->
   <script src="scripts/star-rating.min.js"></script>
   <script>
     var stars = new StarRating(".star-rating", {
-      tooltip: "Choisissez votre note",
+      tooltip: false,
     });
   </script>
 </body>

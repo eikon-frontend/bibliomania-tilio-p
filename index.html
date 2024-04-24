@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="img/Profils/frintdevmax.png" alt="photo de profil utilisateur" class="pp">
+    <button class="retour" type="button">retour</button>
+    </div>
+  </header>
+
+  <main>
+    <img src="img/couvertures/origines_couverture.jpg" alt="image du livre Origines de Laurence suhner">
+    <div class="titrartiste">
+      <h1>Origines</h1>
+      <h3>Laurence Suhner</h3>
+    </div>
+
+    <div>
+      <img src="img/Bouton/v button.png" alt="">
+    </div>
+
+    <div class="infos">
+      <div>science fiction</div>
+      <div>2015</div>
+      <div>576 pages</div>
+      <div>8+</div>
+    </div>
+
+    <p>
+      À l'aide d'un astronef de la milice, Ambre et ses compagnons ont pénétré les défenses du Grand Arc, Kalaân
+      l'Ancien, et ils ont atterri à son bord. Pour les scientifiques, la surprise est totale : forêt primaire et océan
+      à
+      perte de vue...
+      Le Grand Arc est un vaisseau-monde.
+      Il est bien plus encore. Ne dit-on pas dans le mythe «qu'il ouvre et qu'il choisit le lieu comme le destin?»
+      Cette fois, les aventuriers ont troqué la glace et le froid de Gemma contre la mer et la chaleur. Ils croient
+      avoir
+      laissé derrière eux l'espace-temps d'AltaMira et la colère du Dévoreur...
+      Ils se trompent.
+      Ioun-ké-da a vu le jour sur Timhkâ, dans les profondeurs abyssales qui plongent sous Naha'netché, la Conque du
+      Sud,
+      gigantesque ascenseur spatial d'où sont jadis partis les Ouvreurs - les vaisseaux d'exploration timhkâns.
+      Au contact de Tokalinan, Ambre se transforme peu à peu. Elle revit son passé et renoue avec ses origines. Elle
+      redevient Kantikâ, la petite-fille de Shânti Divakarûnî.
+      Mais sa métamorphose l'emmènera plus loin encore. Bien au-delà de l'humain
+    </p>
+
+
+    <h2>Ecrire un avis</h2>
+
+    <h4>Note</h4>
+
+    <h2>Avis</h2>
+
+    <img src="img/Profils/simp1.png" alt="photo de profil autre utilisateur">
+    <h5>@LJBentley</h5>
+    <p>
+      Excellent roman de SF; halletant et original ! à recommander; offrir, ... enfin de la SF écrit avec un regard
+      féminin.
+    </p>
+    <h4>Note</h4>
+    <div class="notescommunaute"></div>
+
+    <img src="img/Profils/simp2.png" alt="photo de profil autre utilisateur">
+    <h5>@Amycolory</h5>
+    <p>
+      En fait ce troisième tome est trop long. La moitié du livre ne sert a rien. On peut la passer sans que la
+      compréhension de l'histoire en soit affectée. La chute est prévisible. Bref. Déçu
+    </p>
+    <h4>Note</h4>
+    <div class="notescommunaute"></div>
+
+    <button class="voir" type="button">voir tout</button>
+  </main>
+
+  <footer>
+    <div class="home"></div>
+  </footer>
+
+
+
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin
+    d'afficher le système de note Javascript -->
+  <!-- 
         <select class="star-rating" aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
@@ -21,12 +100,15 @@
             <option value="1">Terrible</option>
         </select>
     -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
+
+
 </html>

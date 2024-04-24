@@ -48,6 +48,14 @@ header img {
   height: 26px;
 }
 
+.photomain {
+  border-radius: 30px;
+  width: 185px;
+  height: 339px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 h1 {
   font-size: 32px;
 }

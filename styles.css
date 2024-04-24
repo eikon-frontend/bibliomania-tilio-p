@@ -25,7 +25,9 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 header img {
@@ -34,6 +36,16 @@ header img {
   stroke-width: 4px;
   stroke: #FFFC00;
 
+}
+
+.retour {
+  background-color: #FFFC00;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 77px;
+  height: 26px;
 }
 
 h1 {
@@ -63,16 +75,6 @@ h4 {
   text-align: center;
 }
 
-.retour {
-  background-color: #FFFC00;
-  border: 0;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 10px;
-  width: 77px;
-  height: 26px;
-}
-
 .voir {
   background-color: #FFFC00;
   border: 0;
@@ -90,13 +92,25 @@ h4 {
 .infos {
   display: flex;
   flex-direction: row;
-  align-items: space-around;
+  text-align: space-around;
+  width: 400px;
+  height: 17px;
+  padding: 5px;
+  position: relative;
 }
 
 .infos div {
   background-color: black;
   color: white;
-  padding: 16px 78px;
-  border-radius: 5px;
   align-content: center;
+  text-align: center;
+  width: 77px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.boutons {
+  display: flex;
 }

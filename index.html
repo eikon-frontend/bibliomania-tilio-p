@@ -12,7 +12,7 @@
 <body>
 
   <header>
-    <div>
+    <div class="contourpp">
       <img src="img/Profils/frintdevmax.png" alt="photo de profil utilisateur" class="pp">
     </div>
     <button class="retour" type="button">retour</button>
@@ -27,19 +27,40 @@
     </div>
 
     <div class="boutons">
-      <button class="ad" type="button"><img src="img/Bouton/add.png" alt=""></button>
+      <button class="ad" type="button"></button>
       <button class="delete" type="button"><img src="img/Bouton/trash.png" alt=""></button>
       <button class="like" type="button"><img src="img/Bouton/like.png" alt=""></button>
       <button class="dislike" type="button"><img src="img/Bouton/dislike.png" alt=""></button>
-      <button class="share" type="button"><img src="img/Bouton/" alt=""></button>
-      <button class="notification" type="button"><img src="img/Bouton/notification.png" alt=""></button>
+      <button class="share" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="53"
+          viewBox="0 0 53 53" fill="none">
+          <circle cx="26.5" cy="26.5" r="26.5" fill="#FFFC00" />
+          <path
+            d="M36.125 19.562H28V29.1909C28 29.4727 27.8683 29.743 27.6339 29.9422C27.3995 30.1415 27.0815 30.2534 26.75 30.2534C26.4185 30.2534 26.1005 30.1415 25.8661 29.9422C25.6317 29.743 25.5 29.4727 25.5 29.1909V19.562H17.375C16.2151 19.5631 15.103 19.9552 14.2828 20.6524C13.4626 21.3495 13.0012 22.2948 13 23.2808V36.0308C13.0012 37.0167 13.4626 37.962 14.2828 38.6591C15.103 39.3563 16.2151 39.7485 17.375 39.7495H36.125C37.2849 39.7485 38.397 39.3563 39.2172 38.6591C40.0374 37.962 40.4988 37.0167 40.5 36.0308V23.2808C40.4988 22.2948 40.0374 21.3495 39.2172 20.6524C38.397 19.9552 37.2849 19.5631 36.125 19.562ZM28 13.6273L32.1164 17.1256C32.3527 17.3164 32.6674 17.4212 32.9934 17.4177C33.3193 17.4141 33.6308 17.3025 33.8613 17.1066C34.0918 16.9106 34.2231 16.6459 34.2273 16.3689C34.2314 16.0918 34.1081 15.8243 33.8836 15.6235L27.6336 10.311C27.3992 10.1118 27.0814 10 26.75 10C26.4186 10 26.1008 10.1118 25.8664 10.311L19.6164 15.6235C19.3919 15.8243 19.2686 16.0918 19.2727 16.3689C19.2769 16.6459 19.4082 16.9106 19.6387 17.1066C19.8692 17.3025 20.1807 17.4141 20.5066 17.4177C20.8326 17.4212 21.1473 17.3164 21.3836 17.1256L25.5 13.6273V19.562H28V13.6273Z"
+            fill="black" />
+        </svg>
+      </button>
+      <button class="notification" type="button">
+        <div style="width: 100%; height: 100%; position: relative">
+          <div
+            style="width: 54px; height: 53px; left: 0px; top: 0px; position: absolute; background: #FFFC00; border-radius: 9999px">
+          </div>
+          <div style="width: 41px; height: 37px; left: 7px; top: 7px; position: absolute">
+            <div
+              style="width: 27.33px; height: 26.98px; left: 6.83px; top: 5.40px; position: absolute; background: black">
+            </div>
+      </button>
     </div>
 
     <div class="infos">
       <div>S.F.</div>
       <div>2015</div>
-      <div>576 pages</div>
+      <div class="pages">576 pages</div>
       <div>8+</div>
+    </div>
+
+    <div class="pournote">
+      <div>Note</div>
+      <div>92%</div>
     </div>
 
     <p>
@@ -61,8 +82,9 @@
       Mais sa métamorphose l'emmènera plus loin encore. Bien au-delà de l'humain
     </p>
 
-
-    <h2>Ecrire un avis</h2>
+    <div class="ecrireavis">
+      <h2>Ecrire un avis</h2>
+    </div>
 
     <h4>Note</h4>
 
@@ -79,7 +101,9 @@
       <button class="envoyer" type="button">envoyer</button>
     </div>
 
-    <h2>Avis</h2>
+    <div class="avis">
+      <h2>Avis</h2>
+    </div>
 
     <img src="img/Profils/simp1.png" alt="photo de profil autre utilisateur">
     <h5>@LJBentley</h5>

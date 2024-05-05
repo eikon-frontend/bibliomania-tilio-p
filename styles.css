@@ -16,7 +16,6 @@
 
 body {
   width: 430px;
-  height: 1994px;
   font-family: century gothic;
   background-color: #302e2e;
   color: white;
@@ -24,6 +23,9 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+
+
 
 header {
   display: flex;
@@ -40,6 +42,10 @@ header img {
   border-radius: 50px;
 }
 
+
+
+
+
 .retour {
   background-color: #FFFC00;
   border: 0;
@@ -48,12 +54,13 @@ header img {
   border-radius: 10px;
   width: 77px;
   height: 26px;
-  cursor: pointer;
 }
 
-.retour:hover {
+.retour:active {
   opacity: 0.8;
 }
+
+
 
 .photomain {
   border-radius: 30px;
@@ -64,6 +71,10 @@ header img {
   margin-right: auto;
 
 }
+
+
+
+
 
 h1 {
   font-size: 32px;
@@ -98,6 +109,10 @@ h5 {
   margin-left: 50px;
 }
 
+
+
+
+
 .envoyer {
   border-radius: 12px;
   background: #FFFC00;
@@ -106,10 +121,9 @@ h5 {
   height: 26px;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
 }
 
-.envoyer:hover {
+.envoyer:active {
   opacity: 0.8;
 }
 
@@ -121,6 +135,10 @@ h5 {
   margin-bottom: 53px;
 }
 
+
+
+
+
 .voir {
   background-color: #FFFC00;
   border: 0;
@@ -130,12 +148,15 @@ h5 {
   width: 77px;
   display: flex;
   margin-left: auto;
-  cursor: pointer;
 }
 
-.voir:hover {
+.voir:active {
   opacity: 0.8;
 }
+
+
+
+
 
 .titrartiste {
   display: flex;
@@ -145,6 +166,11 @@ h5 {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+
+
+
+
 
 .infos {
   display: flex;
@@ -167,6 +193,9 @@ h5 {
   border-radius: 5px;
 }
 
+
+
+
 .pournote {
   display: flex;
   justify-content: space-around;
@@ -176,12 +205,78 @@ h5 {
   border-radius: 6px;
 }
 
+
+
+
+
 .boutons {
   display: flex;
-  justify-content: center;
   margin-bottom: 22px;
-  padding-left: 40px;
 }
+
+.ad {
+  background-color: #302e2e;
+  border: none;
+}
+
+.ad:active {
+  opacity: 0.8;
+}
+
+
+.delete {
+  background-color: #302e2e;
+  border: none;
+}
+
+.delete:active {
+  opacity: 0.8;
+}
+
+
+.like {
+  background-color: #302e2e;
+  border: none;
+}
+
+.like:active {
+  opacity: 0.8;
+}
+
+
+.dislike {
+  background-color: #302e2e;
+  border: none;
+}
+
+.dislike:active {
+  opacity: 0.8;
+}
+
+.share {
+  background-color: #302e2e;
+  border: none;
+}
+
+.share:active {
+  opacity: 0.8;
+}
+
+
+.notification {
+  background-color: #302e2e;
+  border: none;
+}
+
+.notification:active {
+  opacity: 0.8;
+}
+
+
+
+
+
+
 
 .note1 {
   width: 174px;
@@ -195,6 +290,10 @@ h5 {
   margin-bottom: 50px;
 }
 
+
+
+
+
 .pu2 {
   display: flex;
   height: 75px;
@@ -207,15 +306,17 @@ h5 {
   align-items: center;
 }
 
+
+
+
+
 p {
   margin-top: 34px;
   margin-bottom: 65px;
 }
 
-button .boutons {
-  border: 0;
-  background-color: none;
-}
+
+
 
 .ecrireavis {
   width: 185px;
@@ -230,6 +331,68 @@ button .boutons {
   margin-bottom: 22px;
 }
 
+
+
 .pages {
   font-size: 13px;
+}
+
+
+
+.barrew {
+  background-color: #FFFC00;
+  width: 430px;
+  height: 70px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home {
+  border: none;
+  background-color: #FFFC00;
+}
+
+.home:active {
+  opacity: 0.8;
+}
+
+.res {
+  border: none;
+  background-color: #FFFC00;
+}
+
+.res:active {
+  opacity: 0.8;
+}
+
+.coll {
+  border: none;
+  background-color: #FFFC00;
+}
+
+.coll:active {
+  opacity: 0.8;
+}
+
+.prof {
+  border: none;
+  background-color: #FFFC00;
+}
+
+.prof:active {
+  opacity: 0.8;
+}
+
+textarea {
+  width: 400px;
+  height: 25px;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  margin-top: 12px;
+  padding-top: 5px;
+  font-family: century gothic;
+  padding-left: 15px;
+  max-width: 400px;
+  resize: vertical;
 }

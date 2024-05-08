@@ -1,32 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
-        </select>
-    -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="img/Profils/frintdevmax.png" alt="photo de profil utilisateur" class="pp" />
+    <button class="retour" type="button">retour</button>
+  </header>
+
+  <main>
+    <img class="photomain" src="img/couvertures/origines_couverture.jpg"
+      alt="image du livre Origines de Laurence suhner" />
+    <div class="titrartiste">
+      <h1>Origines</h1>
+      <h3>Laurence Suhner</h3>
+    </div>
+
+    <div class="boutons">
+      <button class="ad" type="button"><img src="img/Bouton/add.png" /></button>
+      <button class="delete" type="button"><img src="img/Bouton/trash.png" alt="" /></button>
+      <button class="like" type="button"><img src="img/Bouton/like.png" alt="" /></button>
+      <button class="dislike" type="button"><img src="img/Bouton/dislike.png" alt="" /></button>
+      <button class="share" type="button"><img src="img/Bouton/share.png" /></button>
+      <button class="notification" type="button"><img src="img/Bouton/notification.png" /></button>
+    </div>
+
+    <div class="infos">
+      <div>S.F.</div>
+      <div>2015</div>
+      <div class="pages">576 pages</div>
+      <div>8+</div>
+    </div>
+
+    <div class="pournote">
+      <div>Note</div>
+      <div>92%</div>
+    </div>
+
+    <p>
+      À l'aide d'un astronef de la milice, Ambre et ses compagnons ont pénétré les défenses du Grand Arc, Kalaân
+      l'Ancien, et ils ont atterri à son bord. Pour les scientifiques, la surprise est totale : forêt primaire et océan
+      à
+      perte de vue...
+      Le Grand Arc est un vaisseau-monde.
+      Il est bien plus encore. Ne dit-on pas dans le mythe «qu'il ouvre et qu'il choisit le lieu comme le destin?»
+      Cette fois, les aventuriers ont troqué la glace et le froid de Gemma contre la mer et la chaleur. Ils croient
+      avoir
+      laissé derrière eux l'espace-temps d'AltaMira et la colère du Dévoreur...
+      Ils se trompent.
+      Ioun-ké-da a vu le jour sur Timhkâ, dans les profondeurs abyssales qui plongent sous Naha'netché, la Conque du
+      Sud,
+      gigantesque ascenseur spatial d'où sont jadis partis les Ouvreurs - les vaisseaux d'exploration timhkâns.
+      Au contact de Tokalinan, Ambre se transforme peu à peu. Elle revit son passé et renoue avec ses origines. Elle
+      redevient Kantikâ, la petite-fille de Shânti Divakarûnî.
+      Mais sa métamorphose l'emmènera plus loin encore. Bien au-delà de l'humain
+    </p>
+
+    <div class="ecrireavis">
+      <h2>Ecrire un avis</h2>
+    </div>
+
+    <textarea name="textarea" resize=vertical wrap=hard placeholder="écrivez un avis.">
+  </textarea>
+
+    <h4>Note</h4>
+
+    <div class="envoi">
+      <select class="star-rating" aria-label="Note utilisateur">
+        <option value="">Select a rating</option>
+        <option value="5">Excellent</option>
+        <option value="4">Very Good</option>
+        <option value="3">Average</option>
+        <option value="2">Poor</option>
+        <option value="1">Terrible</option>
+      </select>
+
+      <button class="envoyer" type="button">envoyer</button>
+    </div>
+
+    <div class="avis">
+      <h2>Avis</h2>
+    </div>
+
+    <div class="pu1">
+      <img src="img/Profils/simp1.png" alt="photo de profil autre utilisateur" />
+      <h5>@LJBentley</h5>
+    </div>
+    <p>
+      Excellent roman de SF; halletant et original ! à recommander; offrir, ... enfin de la SF écrit avec un regard
+      féminin!
+    </p>
+    <h4>Note</h4>
+    <div class="note1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="174" height="30" viewBox="0 0 174 30" fill="none">
+        <ellipse cx="159" cy="14.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="123" cy="14.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="87" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="51" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="15" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+      </svg>
+    </div>
+
+    <div class="pu2">
+      <img src="img/Profils/simp2.png" alt="photo de profil autre utilisateur" />
+      <h5>@Amycolory</h5>
+    </div>
+    <p>
+      En fait ce troisième tome est trop long. La moitié du livre ne sert a rien. On peut la passer sans que la
+      compréhension de l'histoire en soit affectée. La chute est prévisible. Bref. Déçu
+    </p>
+    <h4>Note</h4>
+    <div class="note2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="174" height="30" viewBox="0 0 174 30" fill="none">
+        <ellipse cx="159" cy="14.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="123" cy="14.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="87" cy="15.5" rx="15" ry="14.5" fill="black" />
+        <ellipse cx="51" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+        <ellipse cx="15" cy="15.5" rx="15" ry="14.5" fill="#FFFC00" />
+      </svg>
+    </div>
+
+
+    <button class="voir" type="button">voir tout</button>
+
+    <div class="barrew">
+      <button class="home" type="button"><img src="img/Bouton/discover.png" /></button>
+      <button class="res" type="button"><img src="img/Bouton/research.png" /></button>
+      <button class="coll" type="button"><img src="img/Bouton/collection.png" /></button>
+      <button class="prof" type="button"><img src="img/Bouton/profil.png" /></button>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="home"></div>
+  </footer>
+
+
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: false,
+    });
+  </script>
+
+  <script src="scripts/survol-boutons.js"></script>
+</body>
+
+
+
 </html>
